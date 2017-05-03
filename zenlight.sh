@@ -2,7 +2,7 @@
 # zenlight.sh
 # set back light using zenity scale
 
-# function to check if a comand exists in path
+# function to check if a command exists in path
 exists(){
     type "$1" >/dev/null 2>&1
 }
@@ -21,7 +21,7 @@ done
 # get the current backlight value (float number)
 CURRENTXBL=$(xbacklight -get)
 
-# remove the decimal part in float current value
+# remove the decimal part in current float value
 ROUNDXBL=$(echo $CURRENTXBL |xargs printf "%.f")
 
 # zenity dialog
